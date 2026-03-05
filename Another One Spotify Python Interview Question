@@ -28,3 +28,14 @@ def fizz_buzz_sum(target):
     if x%3==0 or x%5==0:
       total +=x 
   return total
+
+-----
+https://datalemur.com/questions/python-compound-interest
+
+def compound_interest(principal, rate, contribution, years):
+  total=principal
+  for i in range(years):
+    total=total*(1+rate/100)
+    total+=contribution
+  return round(total,2)
+    
