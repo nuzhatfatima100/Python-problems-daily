@@ -17,3 +17,14 @@ def another_one(digits):
     else:
         # All digits were 9, so add a leading 1
         return [1] + digits
+
+-----
+https://datalemur.com/questions/python-fizz-buzz-sum
+
+fizz_buzz_sum that adds up all numbers below target that are divisible by 3 or 5 (counting numbers like 15 only once):
+def fizz_buzz_sum(target):
+  total=0
+  for x in range(target):
+    if x%3==0 or x%5==0:
+      total +=x 
+  return total
